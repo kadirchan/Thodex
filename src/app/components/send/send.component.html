@@ -1,0 +1,9 @@
+<button type="Button" (click)="Send()">Send ETH</button>
+<div id="tx" style="display: none">
+  <p>transaction tx : {{ tx }}</p>
+  <p>waiting confirmation...</p>
+</div>
+<div id="success" style="display: none">
+  <p>Transaction successfull!</p>
+  <a href="" id="link" target="_blank"> Transaction: {{ tx }} </a>
+</div>

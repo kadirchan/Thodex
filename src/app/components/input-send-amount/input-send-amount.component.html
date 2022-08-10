@@ -1,0 +1,4 @@
+<p>Enter Ether amount:</p>
+<input #box (keyup.enter)="getAmount(box.value)" placeholder="Amount" />
+<button type="button" (click)="getAmount(box.value)">Enter</button>
+<p id="insufficient" style="display: none">Insufficient funds!</p>

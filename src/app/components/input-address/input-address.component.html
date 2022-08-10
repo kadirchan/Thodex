@@ -1,0 +1,12 @@
+<p>Write receiver address</p>
+<input
+  #box
+  (keyup.enter)="getAddress(box.value); box.value = ''"
+  placeholder="Address"
+  maxlength="42"
+/>
+<button type="button" (click)="getAddress(box.value)">Enter</button>
+<p id="receiver_balance" style="display: none">
+  Balance : {{ balance }} {{ symbol }}
+</p>
+<p id="invalid" style="display: none">Invalid Address</p>
